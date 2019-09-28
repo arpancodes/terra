@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Roboto:400,500,900"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<title>Terra</title>
+	</head>
+	<body>
+		<header>
+			<div id="logo">
+				<img src="./assets/images/logo.png" alt="terra-logo" /> erra
+			</div>
+			<nav>
+				<ul>
+					<a href="/"><li>Home</li></a>
+					<a href="#about"><li>About</li></a>
+					<a href="#"><li>Login</li></a>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section id="hero">
+				<div class="tagline">
+					<h1>DO YOU KNOW?</h1>
+					<h1>PLASTICS <span class="greenit">CAN BE</span> DEGRADED?</h1>
+					<h2>
+						Act Responsible Think <span class="greenit">Sustainable!</span>
+					</h2>
+				</div>
+			</section>
+			<section id="introduction">
+				<video
+					src="./assets/videos/Galleria mellonella - a plastic-eating caterpillar.mp4"
+					controls
+				></video>
+				<p>
+					Each year, the world produces 300 million tons of plastic, much of
+					which resists degradation and ends up polluting every corner of the
+					globe. But a team of European scientists may have found a unique
+					solution to the plastic problem. They discovered that a common insect
+					can chew sizable holes in a plastic shopping bag within 40 minutes.
+				</p>
+			</section>
+			<section id="navigate">
+				<a
+					style="background-color: rgba(250, 154, 10, 0.959)"
+					href="./leaderboard.html"
+					><img class="icon" src="./assets/images/leader-icon.png" />
+					Leaderboard</a
+				>
+				<a
+					style="background-color:  rgba(240, 39, 106, 0.925); color: rgb(19, 19, 19);"
+					href="./progress.html"
+					><img class="icon" src="./assets/images/progress-icon.png" /> Our
+					Progress</a
+				>
+				<a
+					style="background-color: rgba(228, 253, 82, 0.959)"
+					href="./mission.html"
+					><img class="icon" src="./assets/images/mission.png" /> Mission</a
+				>
+				<a href="./partners.html"
+					><img class="icon" src="./assets/images/partnership-icon.png" /> Our
+					Partners</a
+				>
+				<a style="background-color: rgba(253, 78, 55, 0.959)" href="./news.html"
+					><img
+						style="width: 75px; margin-right:7px;"
+						class="icon"
+						src="./assets/images/news-icon.png"
+					/>
+					News and Resources</a
+				>
+				<a
+					style="background-color: rgba(80, 169, 252, 0.959)"
+					href="./history.html"
+					><img
+						style="width: 75px; margin-right:7px;"
+						class="icon"
+						src="./assets/images/history-icon.png"
+					/>
+					History</a
+				>
+			</section>
+		</main>
+		<script>
+			const video = document.querySelector('video');
+			document.body.addEventListener('scroll', () => {
+				if (video.getBoundingClientRect.y < 50) {
+					video.play();
+				}
+			});
+		</script>
+	</body>
+</html>
